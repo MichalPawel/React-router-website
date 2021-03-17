@@ -1,0 +1,7 @@
+footer {
+    padding: 10px;
+    text-transform: uppercase;
+}
+footer span {
+    color: red;
+}

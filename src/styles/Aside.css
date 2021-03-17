@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {    
+    margin-top: 30px;
+    padding: 0 30px 30px 0;
+}
+ul {
+    list-style: none;    
+}
+nav a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+    transition: .3s;
+}
+nav a:hover {
+    transform: translateX(10px);
+}
+nav a.active {
+    transform: translateX(0);
+    border-left: 5px solid gray;
+}
+nav li:nth-child(1) a.active {border-left-color:red;}
+nav li:nth-child(2) a.active {border-left-color:blue;}
+nav li:nth-child(3) a.active {border-left-color:green;}
+nav li:nth-child(4) a.active {border-left-color:orange;}
