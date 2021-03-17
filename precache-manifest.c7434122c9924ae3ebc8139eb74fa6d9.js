@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "fd13c014da09d8b68d88",
+    "revision": "774fc74177456e75d274",
     "url": "/project-react-router/static/css/main.56a52b64.chunk.css"
   },
   {
-    "revision": "fd13c014da09d8b68d88",
-    "url": "/project-react-router/static/js/main.6251ebb6.chunk.js"
+    "revision": "774fc74177456e75d274",
+    "url": "/project-react-router/static/js/main.1b7fab76.chunk.js"
   },
   {
     "revision": "28869abae223db6b2af6",
@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/project-react-router/static/media/gruz4.92157135.jpg"
   },
   {
-    "revision": "4b24e8788d1f31fb3725525727b886c1",
+    "revision": "252fe27fd4f0f532b9a568352af9e8d7",
     "url": "/project-react-router/index.html"
   }
 ];
