@@ -9,7 +9,7 @@ import Page from './Page'
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router basename={process.env.public_URL}>
         <div className="app">
           <header><Header /></header>
           <main>
