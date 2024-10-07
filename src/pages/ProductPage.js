@@ -3,7 +3,7 @@ import Product from '../components/Product'
 const ProductPage = ({ match }) => {
     return (
         <>
-            <div>Strona Produktu</div>
+            <div>Product Page</div>
             <Product id={match.params.id} />
         </>
     );

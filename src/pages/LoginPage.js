@@ -3,9 +3,9 @@ import React from 'react';
 const LoginPage = () => {
     return (
         <div>
-            <label>Podaj login: <input type="text" /></label> <br />
-            <label htmlFor="">Podaj hasło: <input type="text" /></label>
-            <button>Zaloguj</button>
+            <label>Login/Email: <input type="text" /></label> <br />
+            <label htmlFor="">Password: <input type="text" /></label>
+            <button>Login</button>
         </div>
     );
 }

@@ -4,7 +4,7 @@ let permission = false;
 const AdminPage = () => {
     return (
         <Route render={() => (
-            permission ? (<h3>Panel Admina - dzien dobry</h3>) : (
+            permission ? (<h3>Admin Panel - Hello</h3>) : (
                 <Redirect to='/login' />
             ))} />
     );

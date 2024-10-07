@@ -11,7 +11,7 @@ const ProductsListPage = () => {
     ))
     return (
         <div className='products'>
-            <div>Lista Produktów</div>
+            <div>Products List</div>
             <div>
                 <ul>
                     {list}

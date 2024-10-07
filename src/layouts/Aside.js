@@ -4,9 +4,9 @@ import '../styles/Aside.css'
 
 const list = [
     { name: 'start', patch: '/', exact: true },
-    { name: 'produkty', patch: '/products' },
-    { name: 'kontakt', patch: '/contact' },
-    { name: 'panel admina', patch: '/admin' },
+    { name: 'products', patch: '/products' },
+    { name: 'contact', patch: '/contact' },
+    { name: 'admin panel', patch: '/admin' },
 ]
 
 const menu = list.map(item => (
@@ -25,7 +25,7 @@ const Aside = () => {
                     <Route path="/products" render={() => menu} />
                     <Route path="/admin" render={() => menu} />
                     <Route path="/login" render={() => menu} />
-                    <Route path="/" render={() => <Link to='/products'>Powrot do listy produktow</Link>} />
+                    <Route path="/" render={() => <Link to='/products'>Go back to products</Link>} />
 
                 </Switch>
             </ul>

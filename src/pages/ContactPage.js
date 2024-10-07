@@ -21,12 +21,12 @@ class ContactPage extends Component {
             <div className="contact">
                 <form onSubmit={this.handleSubmit}>
                     <h3>Napisz do nas!</h3>
-                    <textarea placeholder='Wpisz wiadomość' value={this.state.value} onChange={this.handleChange}></textarea>
+                    <textarea placeholder='Message me' value={this.state.value} onChange={this.handleChange}></textarea>
                     <button>Wyślij</button>
                 </form>
                 <Prompt
                     when={this.state.value}
-                    message='Masz niewypełniony formularz. Czy na pewno chcesz opuścić stronę?'
+                    message='You have unsaved changes. Do you really want to leave the page?'
                 />
             </div>
         );
