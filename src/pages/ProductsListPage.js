@@ -1,25 +1,47 @@
-import React from 'react';
-import { Link } from 'react-router-dom'
-import '../styles/ProductsListPage.css'
-const products = ['car', 'bike', 'motocycle']
+import React, { useState } from 'react';
+import axios from 'axios';
 
-const ProductsListPage = () => {
-    const list = products.map(product => (
-        <li key={product}>
-            <Link to={`/product/${product}`}>{product}</Link>
-        </li>
-    ))
-    return (
-        <div className='products'>
-            <div>Products List</div>
-            <div>
-                <ul>
-                    {list}
-                </ul>
-            </div>
-        </div>
+const KTrainingSections = () => {
+  const [data, setData] = useState(null);  // To store API response data
+  const [loading, setLoading] = useState(false);  // To manage loading state
+  const [error, setError] = useState(null);  // To manage error state
 
-    );
-}
+  // Function to handle API call
+  const fetchSections = async () => {
+    setLoading(true);
+    setError(null);  // Clear previous error
+    try {
+      const response = await axios.get('http://localhost:9050/ktraining/docker-images');
+      setData(response.data);  // Update state with API response
+    } catch (err) {
+      setError('Error fetching sections');
+    } finally {
+      setLoading(false);
+    }
+  };
 
-export default ProductsListPage;
+  return (
+    <div>
+      {/* Button to trigger the API call */}
+      <button onClick={fetchSections} disabled={loading}>
+        {loading ? 'Loading...' : 'Fetch docker-images'}
+      </button>
+
+      {/* Error Handling */}
+      {error && <div style={{ color: 'red' }}>{error}</div>}
+
+      {/* Display API response inside a div */}
+      <div>
+        {data ? (
+          <pre>{JSON.stringify(data, null, 2)}</pre> 
+        ) : (
+          <p>No data available yet.</p>
+        )}
+      </div>
+    </div>
+
+    
+  );
+};
+
+export default KTrainingSections;

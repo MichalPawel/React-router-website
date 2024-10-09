@@ -4,9 +4,9 @@ import '../styles/Aside.css'
 
 const list = [
     { name: 'start', patch: '/', exact: true },
-    { name: 'products', patch: '/products' },
+    { name: 'fetch docker images', patch: '/products' },
     { name: 'contact', patch: '/contact' },
-    { name: 'admin panel', patch: '/admin' },
+    { name: 'fetch sections', patch: '/admin' },
 ]
 
 const menu = list.map(item => (
