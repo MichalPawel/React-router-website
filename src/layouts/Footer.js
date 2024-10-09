@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div>
             <h2>Footer</h2>
-            <Switch>
+            {/* <Switch>
                 <Route path='/' exact render={() => {
                     return (
                         <div>You are on the <span>Home Page</span></div>
@@ -21,7 +21,7 @@ const Footer = () => {
                         <div>You are on a  <span>{props.match.url}</span></div>
                     )
                 }}></Route>
-            </Switch>
+            </Switch> */}
         </div>
     );
 }

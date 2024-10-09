@@ -9,7 +9,10 @@ import '../styles/Header.css';
 const Header = () => {
     return (
         <>
-            <Switch>
+        <div>
+
+        </div>
+            {/* <Switch>
                 <Route exact path="/" render={() => (
                     <img src={gruz1} alt='gruz1' />
                 )} />
@@ -25,7 +28,7 @@ const Header = () => {
                 <Route path="/" render={() => (
                     <img src={gruz1} alt='gruz1' />
                 )} />
-            </Switch>
+            </Switch> */}
         </>
     );
 }

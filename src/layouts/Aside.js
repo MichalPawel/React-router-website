@@ -3,9 +3,9 @@ import { NavLink, Switch, Route, Link } from 'react-router-dom';
 import '../styles/Aside.css'
 
 const list = [
-    { name: 'start', patch: '/', exact: true },
+ { name: 'start', patch: '/', exact: true },
     { name: 'fetch docker images', patch: '/products' },
-    { name: 'contact', patch: '/contact' },
+    // { name: 'contact', patch: '/contact' },
     { name: 'fetch sections', patch: '/admin' },
 ]
 

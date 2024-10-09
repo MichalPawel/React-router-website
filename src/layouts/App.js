@@ -11,12 +11,12 @@ class App extends Component {
     return (
       <Router basename={process.env.PUBLIC_URL}>
         <div className="app">
-          <header><Header /></header>
+          {/* <header><Header /></header> */}
           <main>
             <aside><Aside /></aside>
             <div className="page"><Page /></div>
           </main>
-          <footer><Footer /></footer>
+          {/* <footer><Footer /></footer> */}
         </div>
       </Router>
     );
